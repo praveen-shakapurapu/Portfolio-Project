@@ -34,5 +34,4 @@ inputs.forEach((input) => {
 });
 
 
-// data = "This is java script"
-// typeof(data)
+
