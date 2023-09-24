@@ -6,59 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./CSS/portfolio.css">
+    <link rel="stylesheet" href="./CSS/portfolio_02.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/portfolio_02.css">
 </head>
 
 <body>
     <header class="header">
-        <a href="#" class="logo">Praveen.</a>
+        <a href="#" class="logo">Port<span>folio...</span></a>
         <nav class="navbar">
-            <a href="#" class="active"></i>Home</a>
+            <a href="#" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#Skills">Skills</a>
-            <a href="#projects">Projects</a>
+            <a href="#project-box">Projects</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
         </nav>
+        <div id="menubar" class="fas fa-bars"></div>
     </header>
-    <section id="sec1">
+    <section id="sec1" class="page1-margin">
         <div class="container">
             <div>
                 <h1>Hello,<span></span></h1>
-                <h1>My Name Is <span></span></h1>   
+                <h1>My Name Is <span></span></h1>
                 <h1>Praveen Shakapurapu<span></span></h1>
-                <h4>Web Developer.<span></span></h4>
-                <a href="./Assets/docs/CV_FORMAT_FSD (2) (1) (5).docx"Download type="button" class="btn">Download CV</a>
-                <a href="https://www.linkedin.com/in/shakapurapu-praveen/" type="button" class="btn">Let's Talk</a>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- About section starts//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <section class="about" id="about">
-        <div class="info">
-            <h1>About Me</h1>
-        </div>
-        <div class="about-cont">
-            <div class="imag">
-                <img src="./Assets/imgs/praveen 01.png" alt="">
-            </div>
-            <div class="descri">
-                <h3>Web Developer</h3>
-                <p>Passionate on Web Development and application development using Angular and Node JS. Having good practical exposure in Java script, Express JS and Mongo DB. Eager to learn new technology lookin for good opportunity in Web Development</p>
-                <a href="https://www.linkedin.com/in/shakapurapu-praveen/"><button>More...</button></a>
+                <h4>Web Developer.</h4>
+                 <a href="./Assets/docs/CV_FORMAT_FSD (2) (1) (5).docx"  type="button" class="btn">Download
+                    CV</a>
+                <a href="https://www.linkedin.com/in/shakapurapu-praveen/" type="button" class="btn">Let's Talk</a> 
             </div>
         </div>
     </section>
-    <!-- About section ends///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-    <!-- Skills starts////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- About section starts///////////////////////////////////////////////////////////////////////// -->
+    <section id="about">
+        <div class="about">
+            <div class="info">
+                <h1>About Me</h1>
+            </div>
+            <div class="about-cont">
+                <div class="imag">
+                    <img src="./Assets/imgs/praveen 01.png" alt="">
+                </div>
+                <div class="descri">
+                    <h3>Web Developer</h3>
+                    <p>Passionate on Web Development and application development using Angular and Node JS. Having good
+                        practical exposure in Java script, Express JS and Mongo DB. Eager to learn new technology lookin
+                        for good opportunity in Web Development</p>
+                    <button class="btnAbout"><a
+                            href="https://www.linkedin.com/in/shakapurapu-praveen/">More...</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section ends//////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Skills starts//////////////////////////////////////////////////////////////////////////// -->
     <div class="Skill-container" id="Skills">
         <h1>Skills</h1>
         <div class="Skills">
@@ -85,191 +90,185 @@
             <span class="bar"><span class="PYTHON"></span></span>
         </div>
     </div>
-    <!-- Skills Ends//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Skills Ends//////////////////////////////////////////////////////////////////////////// -->
 
-    <!-- Project starts///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
-    <section class="proj" id="projects">
-        <header class="project">
-            <h1>Projects</h1>
-        </header>
-        <div class="cards">
-            <div class="image">
-                <img src="./Assets/imgs/portfolio.png" alt="">
-            </div>
-            <div class="title">
-                <p>Portfolio</p>
-            </div>
-            <div class="des">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia provident non earum voluptatibus
-                    nam ratione nesciunt reiciendis dolorem inventore ex.</p>
-                <button>View</button>
-            </div>
+    <!-- Project starts///////////////////////////////////////////////////////////////////////// -->
+    <section id="project-box" itemid="Projects"> 
+        <h1>Projects</h1>
+        <div class="box">
+            <img src="./Assets/imgs/portfolio.png" alt="" height="220px">
+            <h4>Portfolio</h4>
+            <p>Tools Used: HTML, CSS, JS</p>
+            <button class="btn-project">More</button>
         </div>
-        <div class="cards">
-            <div class="image">
-                <img src="./Assets/imgs/project01.png" alt="">
-            </div>
-            <div class="title">
-                <p>Project 2</p>
-            </div>
-            <div class="des">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque in nobis alias eos incidunt
-                    dolorem facere placeat omnis eveniet obcaecati?</p>
-                <button>View</button>
-            </div>
+        <div class="box">
+            <img src="https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg"
+                alt="" height="220px">
+            <h4>Portfolio</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, accusamus.</p>
+            <button class="btn-project">More</button>
         </div>
-        <div class="cards">
-            <div class="image">
-                <img src="./Assets/imgs/project01.png" alt="">
-            </div>
-            <div class="title">
-                <p>Project 3</p>
-            </div>
-            <div class="des">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus asperiores unde sit ab quam iure
-                    ipsum pariatur alias tempore provident!</p>
-                <button>View</button>
-            </div>
-            <div class="button">
-            </div>
+        <div class="box">
+            <img src="https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg"
+                alt="" height="220px">
+            <h4>Portfolio</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, accusamus.</p>
+            <button class="btn-project">More</button>
         </div>
-        <div class="cards">
-            <div class="image">
-                <img src="./Assets/imgs/project01.png" alt="">
-            </div>
-            <div class="title">
-                <p>Project 4</p>
-            </div>
-            <div class="des">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis placeat nisi quaerat veniam quasi
-                    voluptas natus ratione id libero et.</p>
-                <button>View</button>
-            </div>
+        <div class="box">
+            <img src="https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg"
+                alt="" height="220px">
+            <h4>Portfolio</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, accusamus.</p>
+            <button class="btn-project">More</button>
+        </div>
+        <div class="box">
+            <img src="https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg"
+                alt="" height="220px">
+            <h4>Portfolio</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, accusamus.</p>
+            <button class="btn-project">More</button>
+        </div>
+        <div class="box">
+            <img src="https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg"
+                alt="" height="220px">
+            <h4>Portfolio</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, accusamus.</p>
+            <button class="btn-project">More</button>
         </div>
     </section>
-    <!-- Project ends///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Project ends/////////////////////////////////////////////////////////////////////////////// -->
 
-    <!-- Services starts/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Services starts//////////////////////////////////////////////////////////////////////////// -->
     <div class="container-service" id="services">
         <h1 class="heading">Services</h1>
         <div class="box-container">
             <div class="box">
-                <img src="./Assets/imgs/html.png" alt="" width="200px" height="200px">
+                <img src="./Assets/imgs/html.png" alt="" width="120px" height="120px">
                 <h3>HTML 5</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, autem?</p>
                 <a href="" class="btn">Read More.....</a>
             </div>
             <div class="box">
-                <img src="./Assets/imgs/CSSSS.png"
-                    alt="" width="200px" height="200px">
+                <img src="./Assets/imgs/CSSSS.png" alt="" width="120px" height="120px">
                 <h3>CSS</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, autem?</p>
                 <a href="" class="btn">Read More.....</a>
             </div>
             <div class="box">
-                <img src="./Assets/imgs/Bootstrap_logo.svg.png" alt="" width="200px" height="200px">
+                <img src="./Assets/imgs/Bootstrap_logo.svg.png" alt="" width="120px" height="120px">
                 <h3>Bootstrap</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, autem?</p>
                 <a href="" class="btn">Read More.....</a>
             </div>
             <div class="box">
-                <img src="./Assets/imgs/Javascript.png" alt="" width="200px"
-                    height="200px">
+                <img src="./Assets/imgs/Javascript.png" alt="" width="120px" height="120px">
                 <h3>Java Script</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, autem?</p>
                 <a href="" class="btn">Read More.....</a>
             </div>
             <div class="box">
-                <img src="./Assets/imgs/Angular.png"
-                    alt="" width="200px" height="200px">
+                <img src="./Assets/imgs/Angular.png" alt="" width="120px" height="120px">
                 <h3>Angular</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, autem?</p>
                 <a href="" class="btn">Read More.....</a>
             </div>
             <div class="box">
-                <img src="./Assets/imgs/React.png" alt=""
-                    width="200px" height="200px">
+                <img src="./Assets/imgs/React.png" alt="" width="120px" height="120px">
                 <h3>React</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, autem?</p>
                 <a href="" class="btn">Read More.....</a>
             </div>
             <div class="box">
-                <img src="./Assets/imgs/Node.png" alt="" width="200px" height="200px">
+                <img src="./Assets/imgs/Node.png" alt="" width="120px" height="120px">
                 <h3>Node Js</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, autem?</p>
                 <a href="" class="btn">Read More.....</a>
             </div>
             <div class="box">
-                <img src="./Assets/imgs/Python-logo-notext.svg.png" alt="" width="200px" height="200px">
+                <img src="./Assets/imgs/Python-logo-notext.svg.png" alt="" width="120px" height="120px">
                 <h3>Python</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, autem?</p>
                 <a href="" class="btn">Read More.....</a>
             </div>
         </div>
     </div>
-    <!-- Services Ends//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Services Ends///////////////////////////////////////////////////////////////////////////////////// -->
 
-    <!-- Contact section starts/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <section class="contact" id="contact">
-        <div class="details">
-            <h1>Contact</h1>
-        </div>
-        <div class="para">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ipsum placeat quasi quaerat
-                praesentium quae harum non officiis suscipit provident, inventore, aut adipisci, hic dolor eius dolorem
-                alias accusantium. Dolorem.</p>
-        </div>
-        <div class="contact-box">
-            <div class="contact-left">
-                <h3>Text Me</h3>
+    <!-- Contact Form Starts/////////////////////////////////////////////////////////////////////////// -->
+    <div class="contact-container" id="Contact">
+        <h1>Contact</h1>
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in Touch</h3>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est aliquam ratione, ea
+                    pariatur qui quaerat.</p>
+
+                <div class="info">
+                    <div class="information">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2838/2838912.png" class="icon" alt="">
+                        <p>21 Ruthraj Bldg Juhu Rd Juhu, Mumbai,Mumbai,400049,India</p>
+                    </div>
+                    <div class="information">
+                        <img src="https://png.pngtree.com/png-vector/20190927/ourmid/pngtree-email-icon-png-image_1757854.jpg" class="icon" alt="">
+                        <p><a href="">Loremipsum@gmail.com</a></p>
+                    </div>
+                    <div class="information">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/013/083/619/small/ringing-phone-simple-icon-smartphone-ringing-sign-smartphone-or-mobile-phone-ringing-illustration-png.png" class="icon" alt="">
+                        <p><a href="">+241 019826377</a></p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <p>Contact me via:</p>
+                    <div class="social-icons">
+                        <a href="">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-pinterest  "></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
                 <form action="">
-                    <div class="input-row">
-                        <div class="input-group">
-                            <label>Name</label>
-                            <input type="text" placeholder="Enter Your Name" required>
-                        </div>
-                        <div class="input-group">
-                            <label>Phone</label>
-                            <input type="Number" placeholder="Enter Your Number">
-                        </div>
+                    <h3 class="title">Text Me</h3>
+                    <div class="input-container ">
+                        <input type="text" name="name" class="input" required>
+                        <label for="">Name</label>
+                        <span>Username</span>
                     </div>
-                    <div class="input-row">
-                        <div class="input-group">
-                            <label>Email</label>
-                            <input type="Email" placeholder="Enter Your Email" required>
-                        </div>
-                        <div class="input-group">
-                            <label>Subject</label>
-                            <input type="text" placeholder="Enter Your Subject">
-                        </div>
+                    <div class="input-container ">
+                        <input type="email" email="name" class="input" required>
+                        <label for="">Email </label>
+                        <span> EmailAd</span>
                     </div>
-                    <label for="">Message</label>
-                    <textarea rows="10" placeholder="Your Meassage"></textarea>
-                    <button type="submit">SEND</button>
+                    <div class="input-container ">
+                        <input type="number" name="number" class="input">
+                        <label for="">Contact</label>
+                        <span>Contact No</span>
+                    </div>
+                    <div class="input-container textarea ">
+                        <textarea name="Message" class="input"></textarea>
+                        <label for="">Subject</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn">
                 </form>
             </div>
-            <div class="contact-right">
-                <h3>Get in Touch</h3>
-
-                <table>
-                    <tr>
-                        <td>Email:</td>
-                        <td>praveenshakapurapu@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Phone:</td>
-                        <td>+91 8074227860</td>
-                    </tr>
-                    <tr>
-                        <td>Address:</td>
-                        <td>Vile Parle, Mumbai</td>
-                    </tr>
-                </table>
-
-            </div>
         </div>
-    </section>
-    <!-- footer -->
+    </div>
     <footer>
         <div class="portfolio">
             <h2>Portfolio</h2>
@@ -289,18 +288,20 @@
                                 style="font-size: 40px; margin: 15px 20px 10px 5px;"></i></a></li>
                     <li><a href="https://twitter.com/praveendinnu19"><i class="fa-brands fa-square-twitter"
                                 style="font-size: 40px; margin: 15px 20px 10px 5px;"></i></a></li>
-                    <li><a href="https://github.com/praveen-shakapurapu?tab=repositories"><i
+                    <li><a href="https://github.com/praveen-shakapurapu?tab
+                        =repositories"><i
                                 class="fa-brands fa-square-github"
                                 style="font-size: 40px; margin: 15px 20px 10px 5px;"></i></a></li>
-                    <li><a href="https://in.pinterest.com/praveenshakapurapu/"><i
-                                class="fa-brands fa-square-pinterest"
+                    <li><a href="https://in.pinterest.com/praveenshakapurapu/"><i class="fa-brands fa-square-pinterest"
                                 style="font-size: 40px; margin: 15px 20px 10px 5px;"></i></a></li>
                 </ul>
             </div>
             <p>Created by Praveen Shakapurapu @2023</p>
         </div>
     </footer>
-    <!-- footer -->
-    <!-- Contact ends///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Contact ends///////////////////////////////////////////////////////////////////////////////////// -->
+    
+    <script src="./js/demo.js"></script>
 </body>
+
 </html>

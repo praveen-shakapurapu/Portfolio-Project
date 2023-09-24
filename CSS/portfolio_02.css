@@ -5,16 +5,11 @@
     box-sizing: border-box;
 }
 @media only screen and (max-width:1200px) and (min-width:900px) {
-    /* About Section/////////////////////////////////////////////////////////////////////// */
     section {
         min-height: 100vh;
     }
     .descri{
         height: 200px;
-    }
-    .proj {
-        max-width: 100%;
-        height: 190vh;
     }
     .cards {
         width: 30%;
@@ -29,8 +24,8 @@
         height: 140vh;
     }
     .contact-box {
-        margin-left: 140px;
-        /* padding: 50px; */
+        display: flex;
+        flex-direction: column;
     }
     .contact-left {
         width: 450px;
@@ -47,8 +42,6 @@
 }
 @media only screen and (max-width:900px) and (min-width: 800px) {
     #sec1 {
-        /* max-height: 50vh; */
-        /* max-width: 670px; */
         width: 100%;
     }
     .navbar a {
@@ -74,10 +67,6 @@
     .descri{
         height: 200px;
     }
-    .proj {
-        max-width: 100%;
-        height: 190vh;
-    }
     .cards {
         width: 30%;
         margin-left: 110px;
@@ -89,17 +78,12 @@
         height: 140vh;
     }
     .contact-box {
-        margin-left: 110px;
-        /* padding: 50px; */
-    }
+        display: flex;
+        flex-direction: column;
+    } 
     .contact-left {
         width: 450px;
         margin-left: 5px;
-    }
-    .contact-right {
-        width: 600px;
-        margin-left: 0;
-        padding-left: 7px;
     }
     tr td {
         font-size: 16px;
@@ -144,10 +128,6 @@
     .Skills {
         width: 75%;
     }
-    .proj {
-        max-width: 100%;
-        height: 370vh;
-    }
     .cards {
         margin-left: 180px;
         width: 45%;
@@ -171,6 +151,10 @@
     .input-row {
         display: flex;
         width: 100%;
+    }
+    .contact-box {
+        display: flex;
+        flex-direction: column;
     }
     .contact-left {
         width: 100%;
@@ -219,14 +203,6 @@
     .Skills {
         width: 90%;
     }
-    /* projects..//// */
-    .proj {
-        max-width: 100%;
-        height: 365vh;
-    }
-    .heading h1 {
-        font-size: 28px;
-    }
     .cards {
         width: 60%;
         margin-left: 110px;
@@ -244,6 +220,11 @@
     .contact-box {
         display: flex;
         flex-direction: column;
+    }
+    .contact-left {
+        width: 50%;
+        margin: 30px 10px;
+        /* padding: 30px; */
     }
     .input-row {
         display: flex;
@@ -273,16 +254,13 @@
     .navbar a {
         padding: 0 2rem;
     }
-    #sec1 {
-        max-height: 75vh;
-    }
     #sec1 h1 {
         font-size: 1.6rem;
         padding-top: 5px;
     }
     #sec1 h4 {
         font-size: 18px;
-        width: 45%;
+        width: 55%;
     }
     #sec1 .btn {
         font-size: 16px;
@@ -297,11 +275,6 @@
     }
     .Skills {
         width: 90%;
-    }
-    /* projects..//// */
-    .proj {
-        height: 360vh;
-        width: 100%;
     }
     .heading h1 {
         font-size: 28px;
@@ -324,10 +297,13 @@
         display: flex;
         width: 100%;
     }
+    .contact{
+        height: 170vh;
+    }
     .contact-left {
-        width: 100%;
-        margin-left: 0;
-        padding-left: 7px;
+        /* width: 100%; */
+        margin:auto;
+        padding: 30px;
     }
     .contact-right {
         margin-left: 0;
@@ -344,85 +320,9 @@
     .icons li a {
         font-size: 20px;
     }
+    
 }
-@media screen and (max-width:350px) {
-    .navbar a {
-        padding: 0 2rem;
-    }
-    #sec1 {
-        max-height: 70vh;
-        max-width: 670;
-        width: 100%;
-    }
-    #sec1 h1 {
-        font-size: 1.6rem;
-        padding-top: 5px;
-    }
-    .container {
-        align-items: baseline;
-        margin-bottom: 20px;
-    }
-    #sec1 h4 {
-        font-size: 18px;
-        width: 56%; 
-    }
-    #sec1 .btn {
-        font-size: 16px;
-        padding: 7px 13px;
-    }
-    section {
-        min-height: 940px;
-    }
-    .descri{
-        height: 490px;
-    }
-    .Skills {
-        width: 90%;
-    }
-    .proj {
-        height: 350vh;
-    }
-    .heading h1 {
-        font-size: 28px;
-    }
-    .cards {
-        width: 80%;
-    }
-    .details h1 {
-        font-size: 28px;
-    }
-    .contact {
-        height: 200vh;
-    }
-    .contact-box {
-        display: flex;
-        flex-direction: column;
-    }
-    .input-row {
-        display: flex;
-        width: 100%;
-    }
-    .contact-left {
-        width: 100%;
-        margin-left: 0;
-        padding-left: 7px;
-    }
-    .contact-right {
-        margin-left: 0;
-        padding-left: 7px;
-    }
-    tr td {
-        font-size: 16px;
-    }
-    .portfolio li a {
-        padding: 8px;
-        width: 60px;
-        font-size: 16px;
-    }
-    .icons li a {
-        font-size: 20px;
-    }
-}
+
 @media only screen and (max-width: 350px) {
     .navbar a {
         padding: 0 2rem;
@@ -452,9 +352,6 @@
     }
     .Skills {
         width: 80%;
-    }
-    .proj {
-        height: 350vh;
     }
     .heading h1 {
         font-size: 28px;
@@ -501,5 +398,116 @@
     }
     .portfolio p{
         font-size: 14px;
+    }
+}
+
+@media(max-width:730px){
+    #menubar{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        height: 95vh;
+        top: 83px;
+        right: 0;
+        left: 0;
+        margin: 0px 10px;  
+        background: #333;
+        border-top: .1rem solid rgba(225, 225, 225, .2);
+        padding: 3rem 5rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        border-radius: 50px;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem 0;
+        background: #a0dc1e;
+    }
+}
+
+@media(max-width:650px){
+    #menubar{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        height: 95vh;
+        top: 83px;
+        right: 0;
+        left: 0;
+        margin: 0px 10px;  
+        background: #333;
+        border-top: .1rem solid rgba(225, 225, 225, .2);
+        padding: 3rem 5rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        border-radius: 50px;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem 0;
+        background: #a0dc1e;
+    }
+}
+
+@media (max-width:850px) {
+    .form{
+        grid-template-columns: 1fr;
+    }
+    .contact-info::before{
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95);
+    }
+    .contact-form::before{
+        top: -13px;
+        left: initial;
+        right: 70px;
+    }
+    .text{
+        margin: 1rem 0 1.5rem 0;
+    }
+    .social-media{
+        padding: 1.5rem 0 0 0;
+    }
+}
+@media (max-width:480px) {
+    .container{
+        padding: 1.5rem;
+    }
+    .contact-info::before{
+        display: none;
+    }
+    form,
+    .contact-info{
+        padding: 1.7rem 1.6rem ;
+    }
+    .text,
+    .information,
+    .social-media p{
+        font-size: 0.8rem;
+    }
+    .title{
+        font-size: 1.15rem;
+    }
+    .social-icons a{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .input{
+        padding: 0.45rem 1.2rem;
     }
 }
